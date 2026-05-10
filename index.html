@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guio | Desenvolvedor Fullstack</title>
+    <!-- Script para evitar flash na troca de cor -->
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo">Guio.dev</div>
+        <div class="nav-actions">
+          <nav>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#formacao">Formação</a></li>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+          <!-- menu hamburguer -->
+          <button class="theme-toggle" id="themeToggle" title="Alternar tema">
+            <svg
+              class="icon-moon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg
+              class="icon-sun"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <svg
+              class="icon-menu"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg
+              class="icon-close"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <!-- menu hamburguer -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre" class="section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-content">
+              <h3>Olá, eu sou o Guio</h3>
+              <h1>Desenvolvedor Fullstack focado em performance.</h1>
+              <div class="about-text">
+                <p>
+                  Transformo ideias complexas em experiências digitais
+                  intuitivas e escaláveis. Com foco em performance e design
+                  centrado no usuário, entrego soluções que realmente fazem a
+                  diferença.
+                </p>
+                <p></p>
+              </div>
+            </div>
+            <div class="about-visual">
+              <div>
+                <img
+                  src="https://github.com/gu1o.png"
+                  alt="Imagem de perfil do Github"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="formacao" class="section section-alt">
+        <div class="container">
+          <div class="trajectory-grid">
+            <!-- Coluna de Formação -->
+            <div class="trajectory-column">
+              <h2 class="section-title-left">Formação</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">Em andamento</span>
+                  <h3>Bacharelado em Ciência da Computação</h3>
+                  <p>
+                    Formação acadêmica atual, focada em fundamentos sólidos de
+                    computação e engenharia.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">Concluído</span>
+                  <h3>Desenvolvimento de Software</h3>
+                  <p>
+                    Etec - Base técnica fundamental para construção de
+                    aplicações.
+                  </p>
+                </div>
+                <div class="languages-box">
+                  <h4>Idiomas</h4>
+                  <div class="language-item">
+                    <span>Inglês</span>
+                    <span class="badge">Avançado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna de Experiência Profissional -->
+            <div class="trajectory-column">
+              <h2 class="section-title-left">Experiência</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">Atual</span>
+                  <h3>Desenvolvedor Fullstack</h3>
+                  <p>
+                    Atuação no desenvolvimento de soluções end-to-end, focando
+                    em escalabilidade e experiência do usuário.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">Anterior</span>
+                  <h3>Desenvolvedor Web</h3>
+                  <p>
+                    Criação de interfaces responsivas e integração com APIs
+                    RESTful.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section">
+        <div class="container">
+          <h2>Projetos em Destaque</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h3>E-commerce Engine</h3>
+                <p>
+                  Plataforma de alto desempenho com processamento de pagamentos
+                  em tempo real.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="14"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3>SaaS Dashboard</h3>
+                <p>
+                  Painel analítico complexo com visualização de dados e BI
+                  integrado.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3>Security Portal</h3>
+                <p>
+                  Sistema de autenticação e monitoramento de segurança para
+                  empresas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section section-alt">
+        <div class="container">
+          <h2>Vamos conversar?</h2>
+          <div class="contact-container">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Nome completo</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Ex: João Silva"
+                />
+                <span class="error-message">Este campo é obrigatório.</span>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail profissional</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="joao@empresa.com"
+                />
+                <span class="error-message">Insira um e-mail válido.</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Sua mensagem</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Descreva seu projeto ou dúvida..."
+                ></textarea>
+                <span class="error-message"
+                  >A mensagem não pode estar vazia.</span
+                >
+              </div>
+              <button type="submit" class="submit-btn">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Guio.dev — Criado com foco em performance.</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast">
+      <span>Mensagem enviada com sucesso!</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
